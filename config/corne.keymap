@@ -1,6 +1,6 @@
 /*
  * Custom Colemak-DH Matrix with Home Row Mods
- * Compatible with standard ZMK (không cần zmk-helpers)
+ * Based on your original keymap
  */
 
 #include <behaviors.dtsi>
@@ -10,7 +10,6 @@
 
 / {
     behaviors {
-        /* Left-hand HRMs */
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -23,7 +22,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        /* Right-hand HRMs */
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -41,16 +39,20 @@
         compatible = "zmk,keymap";
 
         // ------------------- DEFAULT LAYER -------------------
+
         default_layer {
+            // Colemak-DH with Home Row Mods
+
             bindings = <
 &kp TAB       &kp Q            &kp W            &kp F         &kp P              &kp B        &kp J      &kp L               &kp U        &kp Y             &kp SEMICOLON     &kp RGUI
 &mo 2         &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G        &kp M      &hmr RIGHT_SHIFT N  &hmr RALT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SQT
 &kp LEFT_ALT  &kp Z            &kp X            &kp C         &kp D              &kp V        &kp K      &kp H               &kp COMMA    &kp DOT           &kp FSLH          &kp RCTRL
-                                                &kp ESCAPE    &lt 1 ENTER         &lt 2 TAB     &kp SPACE  &lt 3 BACKSPACE      &kp DELETE
+                                                &kp ESCAPE    &lt 1 ENTER        &lt 2 TAB    &kp SPACE  &lt 3 BACKSPACE     &kp DELETE
             >;
         };
 
         // ------------------- LOWER LAYER -------------------
+
         lower_layer {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &trans      &kp UP_ARROW   &kp HOME   &kp END      &kp TILDE  &kp N7        &kp N8         &kp N9        &kp ASTERISK  &kp BSPC
@@ -61,6 +63,7 @@
         };
 
         // ------------------- RAISE LAYER -------------------
+
         raise_layer {
             bindings = <
 &kp TAB     &kp LCTRL     &trans           &kp UP_ARROW    &kp PAGE_UP      &kp PAGE_DOWN    &kp LEFT_BRACKET       &kp AMPS         &kp ASTRK      &kp LPAR   &kp RPAR  &kp RIGHT_BRACKET
@@ -71,8 +74,14 @@
         };
 
         // ------------------- LAYER 3 -------------------
+
         layer_3 {
             bindings = <
 &trans    &kp F9  &kp F10  &kp F11     &kp F12    &trans       &trans  &msc SCRL_UP    &kp UP_ARROW     &msc SCRL_DOWN  &trans         &trans
 &mkp MB5  &kp F5  &kp F6   &kp F7      &kp F8     &mkp MB5     &trans  &kp LEFT        &kp DOWN_ARROW   &kp RIGHT       &trans         &trans
-&mkp MB4  &kp F1  &kp F2   &kp F3      &kp F4     &mkp MB4     &trans  &msc SCRL
+&mkp MB4  &kp F1  &kp F2   &kp F3      &kp F4     &mkp MB4     &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans          &kp RIGHT_ALT  &kp RIGHT_ALT
+                           &kp DELETE  &mkp RCLK  &mkp LCLK    &trans  &trans          &trans
+            >;
+        };
+    };
+};
