@@ -9,6 +9,48 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+/*
+ * Custom mod-tap tuning for Corne (ZMK)
+ * T and N act as normal keys on tap, Shift on hold
+ * Optimized for fast typists to reduce false Shift activations.
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+        // === Default global hold-tap tuning ===
+        hold_tap {
+            tapping-term-ms = <170>;          // shorten hold timeout
+            flavor = "tap-preferred";          // favor tap if timing is ambiguous
+            hold-trigger-on-release;           // only trigger hold if still pressed after others released
+        };
+
+        // === Custom behavior: Left Shift when held, T when tapped ===
+        mt_shift_t: mod_tap_shift_t {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Mod Tap Shift T";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            bindings = <&kp LEFT_SHIFT>, <&kp T>;
+        };
+
+        // === Custom behavior: Right Shift when held, N when tapped ===
+        mt_shift_n: mod_tap_shift_n {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Mod Tap Shift N";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            bindings = <&kp RIGHT_SHIFT>, <&kp N>;
+        };
+    };
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
