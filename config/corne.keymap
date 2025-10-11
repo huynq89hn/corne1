@@ -56,10 +56,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp F           &kp P  &kp B          &kp J      &kp L  &kp U            &kp Y    &kp SEMICOLON  &kp RGUI
-&mo 2         &kp A  &kp R  &kp S           &kp T  &kp G          &kp M      &kp N  &kp E            &kp I    &kp O          &kp SQT
-&kp LEFT_ALT  &kp Z  &kp X  &kp C           &kp D  &kp V          &kp K      &kp H  &kp COMMA        &kp DOT  &kp FSLH       &kp RCTRL
-                            &kp LEFT_SHIFT  &mo 1  &lt 2 ENTER    &kp SPACE  &mo 3  &kp RIGHT_SHIFT
+&kp TAB       &kp Q  &kp W  &kp F           &kp P  &kp B        &kp J      &kp L  &kp U            &kp Y    &kp SEMICOLON  &kp RGUI
+&mo 2         &kp A  &kp R  &kp S           &kp T  &kp G        &kp M      &kp N  &kp E            &kp I    &kp O          &kp SQT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C           &kp D  &kp V        &kp K      &kp H  &kp COMMA        &kp DOT  &kp FSLH       &kp RCTRL
+                            &kp LEFT_SHIFT  &mo 1  &kp ENTER    &kp SPACE  &mo 3  &kp RIGHT_SHIFT
             >;
         };
 
@@ -74,7 +74,7 @@
 
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME   &kp END      &kp TILDE  &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BSPC
-&bt BT_CLR    &kp LC(A)     &kp ESC      &kp BACKSPACE  &mo 4      &kp DEL      &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SPACE     &trans
+&bt BT_CLR    &kp LC(A)     &kp ESC      &kp BACKSPACE  &mo 2      &kp DEL      &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SPACE     &trans
 &bt BT_SEL 2  &bt BT_SEL 3  &kp LC(Z)    &kp LC(X)      &kp LC(C)  &kp LC(V)    &kp PLUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &trans
                                          &kp SPACE      &kp ENTER  &trans       &kp N0     &kp PERIOD    &trans
             >;
@@ -100,7 +100,7 @@
         layer_3 {
             bindings = <
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &msc SCRL_LEFT  &kp UP_ARROW  &msc SCRL_RIGHT  &trans         &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &mo 4           &kp DOWN      &kp RIGHT        &trans         &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &kp LEFT        &kp DOWN      &kp RIGHT        &trans         &trans
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans          &trans        &trans           &kp RIGHT_ALT  &trans
                          &trans   &trans   &trans    &trans  &trans          &trans
             >;
