@@ -18,7 +18,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
-
             display-name = "Mod-Tap";
         };
     };
@@ -32,7 +31,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
-
             display-name = "Layer-Tap";
         };
     };
