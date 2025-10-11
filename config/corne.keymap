@@ -56,10 +56,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp F         &kp P        &kp B             &kp J            &kp L        &kp U      &kp Y    &kp SEMICOLON  &kp RGUI
-&mo 2         &kp A  &kp R  &kp S         &kp T        &kp G             &kp M            &kp N        &kp E      &kp I    &kp O          &kp SQT
-&kp LEFT_ALT  &kp Z  &kp X  &kp C         &kp D        &kp V             &kp K            &kp H        &kp COMMA  &kp DOT  &kp FSLH       &kp RCTRL
-                            &kp LEFT_ALT  &lt 1 ENTER  &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &lt 3 SPACE  &kp RCTRL
+&kp TAB       &kp Q  &kp W  &kp F         &kp P           &kp B          &kp J              &kp L            &kp U      &kp Y    &kp SEMICOLON  &kp RGUI
+&mo 2         &kp A  &kp R  &kp S         &kp T           &kp G          &kp M              &kp N            &kp E      &kp I    &kp O          &kp SQT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C         &kp D           &kp V          &kp K              &kp H            &kp COMMA  &kp DOT  &kp FSLH       &kp RCTRL
+                            &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 ENTER    &lt 3 RIGHT_SHIFT  &kp RIGHT_SHIFT  &kp RCTRL
             >;
         };
 
@@ -93,7 +93,7 @@
 &trans      &kp LCTRL          &kp HOME         &kp UP_ARROW    &kp END            &kp PAGE_UP        &kp LEFT_BRACKET       &kp AMPS         &kp ASTRK    &kp LPAR   &kp RPAR  &kp RIGHT_BRACKET
 &trans      &kp LEFT_ALT       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT          &kp PAGE_DOWN      &kp UNDERSCORE         &kp DOLLAR       &kp PERCENT  &kp CARET  &kp BSLH  &kp LESS_THAN
 &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp EQUAL              &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp PIPE  &kp GREATER_THAN
-                                                &kp SPACE       &kp ENTER          &kp SPACE          &kp RIGHT_PARENTHESIS  &kp PERIOD       &kp DELETE
+                                                &kp SPACE       &kp ENTER          &trans             &kp RIGHT_PARENTHESIS  &kp PERIOD       &kp DELETE
             >;
         };
 
