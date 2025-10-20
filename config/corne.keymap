@@ -59,7 +59,7 @@
             bindings = <
 &trans  &kp LCTRL     &kp F4    &trans         &kp F2             &kp PAGE_UP        &kp LEFT_BRACKET       &kp AMPS         &kp ASTRK    &kp LPAR   &kp RPAR  &kp RIGHT_BRACKET
 &trans  &kp LEFT_ALT  &kp ESC   &kp BACKSPACE  &kp DEL            &kp PAGE_DOWN      &kp UNDERSCORE         &kp DOLLAR       &kp PERCENT  &kp CARET  &kp BSLH  &kp LESS_THAN
-&trans  &kp CAPSLOCK  &kp CAPS  &kp C_MUTE     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp EQUAL              &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp PIPE  &kp GREATER_THAN
+&trans  &trans        &kp CAPS  &kp C_MUTE     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp EQUAL              &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp PIPE  &kp GREATER_THAN
                                 &kp SPACE      &kp ENTER          &trans             &kp RIGHT_PARENTHESIS  &kp COMMA        &kp DELETE
             >;
         };
