@@ -41,7 +41,7 @@
 
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp UP_ARROW    &kp HOME   &kp END      &kp TILDE  &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BSPC
-&bt BT_CLR    &kp LC(A)     &kp LEFT      &kp DOWN_ARROW  &kp RIGHT  &kp DEL      &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SPACE     &kp LESS_THAN
+&bt BT_CLR    &kp LC(A)     &kp LEFT      &kp DOWN_ARROW  &kp RIGHT  &trans       &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SPACE     &kp LESS_THAN
 &bt BT_SEL 3  &kp LC(A)     &kp LC(Z)     &kp LC(X)       &kp LC(C)  &kp LC(V)    &kp PLUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp GREATER_THAN
                                           &kp SPACE       &kp ENTER  &trans       &kp N0     &kp PERIOD    &trans
             >;
