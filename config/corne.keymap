@@ -23,10 +23,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp F          &kp P             &kp B             &kp J            &kp L              &kp U       &kp Y    &kp SEMICOLON  &kp RGUI
-&mo 2         &kp A  &kp R  &kp S          &kp T             &kp G             &kp M            &kp N              &kp E       &kp I    &kp O          &kp SQT
-&kp LEFT_ALT  &kp Z  &kp X  &kp C          &mt LEFT_SHIFT D  &kp V             &kp K            &mt RIGHT_SHIFT H  &kp COMMA   &kp DOT  &kp FSLH       &kp RCTRL
-                            &kp BACKSPACE  &lt 1 ENTER       &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &lt 2 SPACE        &kp DELETE
+&kp TAB       &kp Q  &kp W  &kp F          &kp P        &kp B             &kp J            &kp L        &kp U       &kp Y    &kp SEMICOLON  &kp RGUI
+&mo 2         &kp A  &kp R  &kp S          &kp T        &kp G             &kp M            &kp N        &kp E       &kp I    &kp O          &kp SQT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C          &kp D        &kp V             &kp K            &kp H        &kp COMMA   &kp DOT  &kp FSLH       &kp RCTRL
+                            &kp BACKSPACE  &lt 1 ENTER  &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &lt 2 SPACE  &kp DELETE
             >;
         };
 
@@ -43,7 +43,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &kp HOME   &kp END      &kp TILDE   &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BSPC
 &bt BT_CLR    &kp LC(A)     &kp ESC       &kp BACKSPACE  &kp ENTER  &kp DEL      &kp MINUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SPACE     &kp LESS_THAN
 &trans        &trans        &kp LC(Z)     &kp LC(X)      &kp LC(C)  &kp LC(V)    &kp PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp GREATER_THAN
-                                          &kp SPACE      &kp ENTER  &trans       &kp PERIOD  &kp N0        &trans
+                                          &trans         &trans     &trans       &kp PERIOD  &kp N0        &trans
             >;
         };
 
