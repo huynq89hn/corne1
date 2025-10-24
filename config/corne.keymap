@@ -23,10 +23,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp F          &kp P             &kp B          &kp J        &kp L              &kp U       &kp Y    &kp SEMICOLON  &kp RGUI
-&mo 2         &kp A  &kp R  &kp S          &kp T             &kp G          &kp M        &kp N              &kp E       &kp I    &kp O          &kp SQT
-&kp LEFT_ALT  &kp Z  &kp X  &kp C          &mt LEFT_SHIFT D  &kp V          &kp K        &mt RIGHT_SHIFT H  &kp COMMA   &kp DOT  &kp FSLH       &kp RCTRL
-                            &kp BACKSPACE  &kp LEFT_SHIFT    &lt 1 ENTER    &lt 2 SPACE  &kp RIGHT_SHIFT    &kp DELETE
+&kp TAB       &kp Q  &kp W  &kp F          &kp P             &kp B             &kp J            &kp L              &kp U       &kp Y    &kp SEMICOLON  &kp RGUI
+&mo 2         &kp A  &kp R  &kp S          &kp T             &kp G             &kp M            &kp N              &kp E       &kp I    &kp O          &kp SQT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C          &mt LEFT_SHIFT D  &kp V             &kp K            &mt RIGHT_SHIFT H  &kp COMMA   &kp DOT  &kp FSLH       &kp RCTRL
+                            &kp BACKSPACE  &lt 1 ENTER       &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &lt 2 SPACE        &kp DELETE
             >;
         };
 
@@ -57,10 +57,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LCTRL     &kp F4    &kp UP_ARROW    &kp F2             &kp PAGE_UP        &kp LEFT_BRACKET  &kp AMPS               &kp ASTRK    &kp LPAR   &kp RPAR  &kp RIGHT_BRACKET
-&trans  &kp LEFT_ALT  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp PAGE_DOWN      &kp UNDERSCORE    &kp DOLLAR             &kp PERCENT  &kp CARET  &kp BSLH  &kp LESS_THAN
-&trans  &trans        &kp CAPS  &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp EQUAL         &kp EXCLAMATION        &kp AT_SIGN  &kp HASH   &kp PIPE  &kp GREATER_THAN
-                                &kp SPACE       &kp ENTER          &trans             &kp COMMA         &kp RIGHT_PARENTHESIS  &kp DELETE
+&trans  &kp LCTRL     &kp F4      &kp UP_ARROW    &kp F2             &kp PAGE_UP        &kp LEFT_BRACKET  &kp AMPS               &kp ASTRK    &kp LPAR   &kp RPAR  &kp RIGHT_BRACKET
+&trans  &kp LEFT_ALT  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp PAGE_DOWN      &kp UNDERSCORE    &kp DOLLAR             &kp PERCENT  &kp CARET  &kp BSLH  &kp LESS_THAN
+&trans  &trans        &caps_word  &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp EQUAL         &kp EXCLAMATION        &kp AT_SIGN  &kp HASH   &kp PIPE  &kp GREATER_THAN
+                                  &kp SPACE       &kp ENTER          &trans             &kp COMMA         &kp RIGHT_PARENTHESIS  &kp DELETE
             >;
         };
 
