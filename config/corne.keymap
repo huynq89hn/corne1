@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
@@ -23,10 +22,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp F          &kp P        &kp B             &kp J            &kp L        &kp U       &kp Y    &kp SEMICOLON  &kp RGUI
-&mo 2         &kp A  &kp R  &kp S          &kp T        &kp G             &kp M            &kp N        &kp E       &kp I    &kp O          &kp SQT
-&kp LEFT_ALT  &kp Z  &kp X  &kp C          &kp D        &kp V             &kp K            &kp H        &kp COMMA   &kp DOT  &kp FSLH       &kp RCTRL
-                            &kp BACKSPACE  &lt 1 ENTER  &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &lt 2 SPACE  &kp DELETE
+&kp TAB       &kp Q  &kp W  &kp F       &kp P        &kp B             &kp J            &kp L        &kp U          &kp Y    &kp SEMICOLON  &kp RGUI
+&mo 2         &kp A  &kp R  &kp S       &kp T        &kp G             &kp M            &kp N        &kp E          &kp I    &kp O          &kp SQT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C       &kp D        &kp V             &kp K            &kp H        &kp COMMA      &kp DOT  &kp FSLH       &kp RCTRL
+                            &kp DELETE  &lt 1 ENTER  &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &lt 2 SPACE  &kp BACKSPACE
             >;
         };
 
@@ -42,7 +41,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &kp HOME       &kp END        &kp TILDE   &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BSPC
 &bt BT_CLR    &kp LC(A)     &kp ESC       &kp BACKSPACE  &kp PAGE_DOWN  &kp PAGE_UP    &kp MINUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SPACE     &kp LESS_THAN
-&trans        &trans        &kp LC(Z)     &kp LC(X)      &kp LC(C)      &kp LC(V)      &kp PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp GREATER_THAN
+&kp LCTRL     &trans        &kp LC(Z)     &kp LC(X)      &kp LC(C)      &kp LC(V)      &kp PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp GREATER_THAN
                                           &trans         &trans         &trans         &kp PERIOD  &kp N0        &trans
             >;
         };
@@ -61,15 +60,6 @@
 &kp LESS_THAN     &kp NON_US_BACKSLASH  &kp CARET              &kp PERCENT   &kp DOLLAR             &kp UNDERSCORE       &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
 &kp GREATER_THAN  &kp PIPE              &kp HASH               &kp AT_SIGN   &kp EXCLAMATION        &kp EQUAL            &kp F1  &kp F2    &kp F4          &kp F6     &kp F8  &kp F12
                                                                &kp RCTRL     &kp RIGHT_PARENTHESIS  &kp COMMA            &trans  &trans    &kp DELETE
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &msc SCRL_LEFT  &kp UP_ARROW  &msc SCRL_RIGHT  &trans         &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &kp LEFT        &kp DOWN      &kp RIGHT        &trans         &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans          &trans        &trans           &kp RIGHT_ALT  &trans
-                         &trans   &trans   &trans    &trans  &trans          &trans
             >;
         };
     };
